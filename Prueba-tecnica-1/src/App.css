@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 20px
+}
+
+main button{
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+main h1{
+    font-size: 40px;
+}
+
+main p {
+    font-size: 20px;
+}

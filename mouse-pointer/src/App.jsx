@@ -23,7 +23,7 @@ function App() {
   }, [activate])
 
   useEffect(() => {
-    document.body.classList.toggle('no-cursor', activate)
+     document.body.classList.toggle('no-cursor', activate)
 
     return () => {
       document.body.classList.remove('no-cursor')

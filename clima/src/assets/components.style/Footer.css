@@ -1,0 +1,18 @@
+footer {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1000px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.day_weather {
+    width: 100px;
+    height: 120px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

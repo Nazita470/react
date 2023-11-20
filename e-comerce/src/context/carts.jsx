@@ -1,31 +1,43 @@
-import { createContext, useState, useReducer} from "react";
-import { initialState, reducer, comandos } from "../reducer/cartReducer";
+import { createContext, useState } from "react";
 
 export const CartContext = createContext()
 
-
-
-
 export function CartProvider({children}){
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [carrito, setCarrito] = useState([])
     
 
     function agregarCarrito(product) {
-      dispatch({
-        type: comandos.ADD_TO_CART,
-        payload: product
-      })
+      let index = carrito.findIndex(item => item.id == product.id)
+      console.log(carrito)
+      console.log(index)
+        if(index == -1) {
+            setCarrito([
+                ...carrito, 
+                {
+                    ...product,
+                    quantity: 1
+                }
+            ])
+        }
+        else {
+            let indicePrincipal = 0
+            carrito.map(element => {
+                if(element.id == product.id){
+                    let indice = carrito.indexOf(element)
+
+                   indicePrincipal = indice
+                }
+            })
+
+            setCarrito()
+        
+            
+        }
+
 }
 
-    function eliminarCarrito(product) {
-      dispatch({
-        type: comandos.DELETE_FORM_CART,
-        payload: product
-      })
-    }
-
     function clearCarrito() {
-       
+        setCarrito([])
 
     }
 
@@ -33,10 +45,9 @@ export function CartProvider({children}){
 
     return (
         <CartContext.Provider value={{
-            carrito: state, 
+            carrito, 
             agregarCarrito,
-            clearCarrito,
-            eliminarCarrito
+            clearCarrito
         }}>
 
             {children}

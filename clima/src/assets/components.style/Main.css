@@ -1,0 +1,73 @@
+main {
+   margin-top: 100px;
+   width: 80%;
+   max-width: 1000px;
+   flex: 1;
+   display: flex
+}
+
+.info_clima{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.clima_img {
+    height: 300px;
+    flex: 1;
+    border: 1px solid black;
+    text-align: start;
+    padding-right: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+    
+}
+
+.clima_img header {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clima_img_grades{
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+
+.clima_img_grades .grades_number {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clima_img_date{
+  font-size: 20px;
+  color: rgb(175, 173, 173);
+}
+
+.clima_img_info{
+  margin-left: 20px; 
+}
+
+.infoClima_text{
+  color:  rgb(175, 173, 173);
+}
+
+.boton_hour {
+  width: 50px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+
+}

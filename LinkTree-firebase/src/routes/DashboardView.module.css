@@ -1,0 +1,35 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 700px;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+.formulario {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputLabel {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.linksContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

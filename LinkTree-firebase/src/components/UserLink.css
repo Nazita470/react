@@ -1,0 +1,43 @@
+.contenedor_userLinks {
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_url_container {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.link_container {
+    display: flex;
+
+}
+
+.editButton, .deleteButton{
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+}
+
+.deleteButton:hover {
+   color: red;
+}
+
+.title_url_link{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.input_link {
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+}
+

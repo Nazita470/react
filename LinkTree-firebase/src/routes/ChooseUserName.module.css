@@ -1,0 +1,32 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: 400px;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.subTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.containerInput {
+    margin: 30px 0px;
+    width: 300px;
+}
+
+.inputLabel {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+

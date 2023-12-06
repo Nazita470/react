@@ -1,0 +1,51 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container .userInfo_container {
+    height: 200px;
+    display: flex;
+
+}
+
+.container .userInfo_container .perfilPhoto { 
+    border-radius: 50%;
+}
+
+.container .userInfo_container .username{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.container .userInfo_container .login_signout {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(51, 51, 255);
+}
+
+.message_input {
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.sendButton {
+    margin-left: 20px;
+    height: 35px;
+    width: 80px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sendButton:hover {
+   
+    background-color: blue;
+    color: white;
+}

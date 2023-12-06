@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.movieContainer {
+    padding: 30px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    gap: 100px;
+}
+

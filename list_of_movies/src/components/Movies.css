@@ -1,0 +1,12 @@
+.boton_pelicula {
+    height: 300px;
+}
+
+.boton_pelicula img{
+    object-fit: cover;
+}
+
+.boton_pelicula p {
+    color: white;
+    font-size: 30px;
+}

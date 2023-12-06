@@ -1,0 +1,18 @@
+.messageContainer {
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.messageContainer .mensaje_contendido{
+    margin: 0px 5px;
+}
+
+.ourMessage {
+    align-items: end;
+    justify-content: end;
+}
+
+.profile {
+    border-radius: 50%;
+}
